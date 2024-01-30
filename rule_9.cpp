@@ -13,7 +13,16 @@
 
 class Base {
 public:
-  Base() { mistery_print(); }
+  Base() {
+    std::cout << "I'm in Constructor! ";
+    mistery_print();
+  }
+
+  ~Base() {
+    std::cout << "I'm in Destructor! ";
+    mistery_print();
+  }
+
   virtual void mistery_print() { std::cout << "I'm from Base class\n"; }
 };
 
